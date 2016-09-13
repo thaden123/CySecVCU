@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<% include templates/header.ejs%>
+<div class="container" style="margin-top:50px; padding-bottom:70px; padding:30px; min-height: 100%">
+    <div class="row" style="margin-bottom:30px">
+        <h1>Current Programs</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2><!--a href="programs/bounty"-->Bounty Program<!--/a--></h2>
+            <p>The bounty program is is a way for students to participate and get experience in white hat hacking
+                on the VCU systems.  This opportunity is coming soon.</p>
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <div class="row" style="margin-bottom:30px">
+        <div class="col-lg-12">
+            <h2><a href="programs/secplus">Security+ Study Group</a></h2>
+            <p>Over the past semester, we have sponsored a study gruop focused on the Security+ Certification offered by Comptia.
+             Several of the participants of this group made materials to help other participants study and experience the concepts
+            on the certification exam.  Our <a href="resources">resources page</a> has these materials.
+            <br>
+            <br>
+                Stay tuned for information about the study group for Fall 2016.
+            </p>
+        </div><!-- /.col-lg-4 -->
+    </div>
+    <hr>
+    <div class="row" style="margin-bottom:30px">
+        <h1>Programs in Development</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <h2><!--a href="programs/capturetheflag">Capture the flag</a-->Capture the flag</h2>
+            <p>Comiong soon!</p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2><!--a href="programs/auditgroup">Security Audit Group</a-->Security Audit Group</h2>
+            <p>Coming soon!</p>
+
+        </div><!-- /.col-lg-4 -->
+    </div>
+
+
+
+</div>
+<% include templates/footer.ejs%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 100%;
+            margin: auto;
+            max-height: 100%;
+        }
+        .carousel-caption {
+            right: 0%;
+            left: 0%;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <% include templates/header.ejs%>
+
+    <div class="container-fluid" style="background-color: dimgray; padding:0px 0px 0px 0px">
+
+        <div id="myCarousel" class="carousel slide container" data-ride="carousel" data-interval="6000" style="padding: 0px 0px 0px 0px">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" >
+                <div class="item active" style="hieght:100%">
+                    <img class="img-responsive" src="/images/hack_space_new_1 - Copy.JPG" alt="Image1">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!--<h4>The VCU Cyber Security Club strives to provide industry level real-world experience in all things security related,
+                            including network hardening, penetration testing, ethical hacking, and more.</h4>-->
+                            <p style="margin-top: 50px"><a class="btn btn-lg btn-default" href="#about" role="button">About us</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src="/images/hack_space_new_2 - Copy.JPG" alt="Image2" style="hieght:100%">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <!--<h4>We sponsor weekly events, including visits from security professionals, certification classes,
+                            and networking socials in order to keep the VCU community access to the rapidly expanding, and industry relevant
+                            cyber security field of today.</h4>-->
+                            <!--p style="margin-top: 50px"><a class="btn btn-lg btn-default" href="/news" role="button">Events</a></--p-->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src="/images/whiteBoard.JPG" alt="Image3" style="hieght:100%">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <p style="margin-top: 50px"><a class="btn btn-lg btn-default" href="/resources" role="button">Start hacking</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div id="about">
+
+        </div>
+    </div>
+    <div class="container" style="margin-top: 50px" >
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-bottom: 300px">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row"  >
+
+            <div class="col-lg-12" style="margin-bottom: 50px">
+                <h2>About</h2>
+                <p>The Cyber Security @ VCU student organization's primary goals are to create greater student involvement
+                    in information security programs, to provide greater opportunities for learning and experience to
+                    students in the information security field, and to create a joint force between students, faculty,
+                    and staff to help defend VCU from outside attacks in the form of exercises, training, and participation
+                    in the Cyber Bounty Program at VCU.  By developing a comprehensive and inclusive task force comprised
+                    of students, faculty, and staff, as well as from industry professionals, experts, and acclaimed
+                    institutions, this organization aims to provide valuable benefits and opportunities to the VCU
+                    community, preparing students for success in the information security field while creating a safer
+                    digital environment for the University as a whole.
+                </p>
+            </div><!-- /.col-lg-4 -
+            <div class="col-lg-12" style="margin-bottom: 50px">
+                <h2>Mission</h2>
+                <p>The Cyber Security @ VCU student organization's primary goals are to create greater student involvement
+                    in information security programs, to provide greater opportunities for learning and experience to
+                    students in the information security field, and to create a joint force between students, faculty,
+                    and staff to help defend VCU from outside attacks in the form of exercises, training, and participation
+                    in the Cyber Bounty Program at VCU.  By developing a comprehensive and inclusive task force comprised
+                    of students, faculty, and staff, as well as from industry professionals, experts, and acclaimed
+                    institutions, this organization aims to provide valuable benefits and opportunities to the VCU
+                    community, preparing students for success in the information security field while creating a safer
+                    digital environment for the University as a whole.
+                </p>
+            </div><!-- /.col-lg-4
+            <div class="col-lg-12" style="margin-bottom: 50px">
+                <h2>How to participate</h2>
+                <h3>Students</h3>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                        ligula porta felis euismod semper. Fusce dapibus, tellus ac  Donec sed odio dui. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce
+                        dapibus, tellus ac  Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <h3>Companies</h3>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                        ligula porta felis euismod semper. Fusce dapibus, tellus ac  Donec sed odio dui. Cras justo odio,
+                        dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce
+                        dapibus, tellus ac  Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                        Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor
+                        mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div>
+            <div class="col-lg-12" style="margin-bottom: 50px">
+                <h2>Our Sponsors</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula
+                    porta felis euismod semper. Fusce dapibus, tellus ac  Donec sed odio dui. Cras justo odio, dapibus ac
+                    facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus
+                    ac  Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id
+                    ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                    nibh, ut fermentum massa justo sit amet risus.</p>
+            </div> /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+
+    </div>
+
+    <% include templates/footer.ejs%>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>
